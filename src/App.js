@@ -1,7 +1,7 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import Nb from './Components/Nb';
-import Admin_Signup from './Components/Admin_signup';
+
 import Admin_Login from './Components/Admin_login';
 import AddUsers from './Components/AddUsers';
 import Common from './Components/Common';
@@ -23,6 +23,8 @@ import Contact from './Components/Contact';
 import Feedback from './Components/Feedback';
 import Orderfood from './Components/Orderfood';
 import Ordermedi from './Components/Ordermedi';
+import Fooduserlogin from './Components/Fooduserlogin';
+import Mediuserlogin from './Components/Mediuserlogin';
 
 
 function App() {
@@ -33,7 +35,7 @@ function App() {
       <Fnb />
       <Routes>
         <Route path="/" element={<Navigate to="/common" />} />
-        <Route path="/admin-signup" element={<Admin_Signup />} />
+        
         <Route path="/admin-login" element={<Admin_Login />} />
         <Route path="/add-users" element={<AddUsers />} />
         <Route path="/common" element={<Common />} />
@@ -52,6 +54,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path='/orderfood' element={<Orderfood/>}/>
         <Route path='/ordermedi' element={<Ordermedi/>}/>
+        <Route path='/fooduserlogin' element={<Fooduserlogin/>}/>
+        <Route path='/mediuserlogin' element={<Mediuserlogin/>}/> 
         </Routes>
     </div>
   );

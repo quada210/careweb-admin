@@ -18,9 +18,9 @@ const Common = () => {
     if (selectedRole === 'admin') {
       navigate('/admin-login');
     } else if (selectedRole === 'food') {
-      navigate('/fhome');
+      navigate('/fooduserlogin');
     } else if (selectedRole === 'medicine') {
-      navigate('/mhome');
+      navigate('/mediuserlogin');
     }
   };
 
